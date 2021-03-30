@@ -1,0 +1,6 @@
+[loadbalancer]
+192.168.1.40 asnsible_ssh_user=root ansible_ssh_pass=Fuck@4244 ansible_connection=ssh
+
+[webserver]
+192.168.1.42 asnsible_ssh_user=root ansible_ssh_pass=1431 ansible_connection=ssh
+

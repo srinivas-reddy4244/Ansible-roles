@@ -1,0 +1,17 @@
+---
+# tasks file for webserver
+- name: installing httpd server
+  package:
+          name: httpd
+          state: present
+- name: copying content to website
+  template:
+          src: index.html
+          dest: /var/www/html/
+  notify: restart httpd
+
+  
+- name: starting httpd service
+  service:
+          name: httpd
+          state: started  
